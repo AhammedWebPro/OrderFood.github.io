@@ -1,0 +1,34 @@
+@media (max-width:1024px-991px){
+    ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: var(--primary-colort);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    }
+    li{
+        position: relative;
+    }
+    ul li:hover::after{
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width:991px){
+    .text-content{
+        width: 100%;
+    }
+    .navigation-wrap{
+        text-align: center;
+        background: #eff4fe;
+    }
+}
+@media(max-widht:767px){
+    .story-section{
+        height: auto;
+        padding: 3rem 0;
+    }
+}
